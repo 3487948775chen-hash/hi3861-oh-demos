@@ -1,0 +1,12 @@
+import("//build/lite/config/component/lite_component.gni")
+
+lite_component("app") {
+  features = [
+    # 取消注释即可编译对应实验，注释则不参与编译
+    "//demos/01_gpio_led:gpio_demo",
+    "//demos/02_adc_multi_key:adc_demo",
+    "//demos/03_ssd1306_oled:oled_demo",
+    "//demos/04_wifi_sta:wifi_demo",
+    "//demos/05_mqtt_client:mqtt_demo",
+  ]
+}
